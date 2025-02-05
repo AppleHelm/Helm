@@ -1,0 +1,93 @@
+/* body */
+body {
+    background-color: rgba(125, 244, 161, 0.4);
+}
+
+body {
+    font-family: "Century Gothic", Arial, sans-serif;
+}
+
+body {
+  background-image: url("Bliss-BG.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+/*P*/
+p {outline-color:rgb(255, 246, 246);}
+
+p.solid {outline-style: solid;}
+
+.p1 {
+  text-align: center;
+  height: 150px;
+  width: 250px;
+  border: 3px solid rgba(0, 0, 0, 0.8);
+  background-color: rgba(58, 138, 217, 0.6);
+}
+
+
+/* ALIGFN*/
+.center {
+  text-align: center;
+  height: 150px;
+  width: 250px;
+}
+
+
+
+/* LIST */
+.Listcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.item {
+  text-align: center;
+}
+
+.label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.Listleft,
+.Listright {
+  height: 250px;
+  width: 150px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 3px solid rgba(0, 0, 0, 0.8);
+}
+
+.Listleft {
+  background: rgba(58, 138, 217, 0.6);
+}
+
+.Listright {
+  background: rgba(58, 138, 217, 0.6);
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+/* profile  */
+
+.profileborder {
+  border: 5px solid rgba(0, 0, 0, 0.8);
+  width: 250px; 
+  height: 255px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  box-sizing: border-box;
+  background-color: rgba(58, 138, 217, 0.6);
+}
