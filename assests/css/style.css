@@ -8,25 +8,15 @@ body {
 }
 
 body {
-  background-image: url('assests/img/Bliss-BG.jpg');
+  background-image: url('../img/Bliss-BG.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
-
 
 /*P*/
 p {outline-color:rgb(255, 246, 246);}
 
 p.solid {outline-style: solid;}
-
-.p1 {
-  text-align: center;
-  height: 150px;
-  width: 250px;
-  border: 3px solid rgba(0, 0, 0, 0.8);
-  background-color: rgba(58, 138, 217, 0.6);
-}
-
 
 /* ALIGFN*/
 .center {
@@ -35,53 +25,9 @@ p.solid {outline-style: solid;}
   width: 250px;
 }
 
-
-
-/* LIST */
-.Listcontainer {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 40px;
-}
-
-.item {
-  text-align: center;
-}
-
-.label {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.Listleft,
-.Listright {
-  height: 250px;
-  width: 150px;
-  padding: 10px;
-  box-sizing: border-box;
-  border: 3px solid rgba(0, 0, 0, 0.8);
-}
-
-.Listleft {
-  background: rgba(58, 138, 217, 0.6);
-}
-
-.Listright {
-  background: rgba(58, 138, 217, 0.6);
-}
-
-ul {
-  list-style-type: disc;
-  padding-left: 20px;
-  margin: 0;
-}
-
 /* profile  */
 
 .profileborder {
-  border: 5px solid rgba(0, 0, 0, 0.8);
   width: 250px; 
   height: 255px;
   display: flex;
@@ -89,5 +35,205 @@ ul {
   align-items: center;
   margin: 20px auto;
   box-sizing: border-box;
+  background-image: url("https://www.pngegg.com/en/png-dkyon"); /* Your background image */
+  background-size: cover; /* Ensures background fills the container */
+  background-position: center; /* Centers the background */
+  background-repeat: no-repeat; /* Prevents tiling */
+  position: relative;
+  border-radius: 50%; /* Makes the entire frame circular */
+  overflow: hidden; /* Prevents image overflow */
+
+.profilepic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the profile image scales well */
+    position: absolute; /* Places the profile picture on top of the background */
+    border-radius: 50%; /* Ensures profile picture is circular */
+}
+  
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+/* Nav.Header.Logo*/
+.header-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;  /* Move to the left instead of right */
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between logo and navbar */
+}
+
+.logo {
+  width: 50px;  /* Adjust size as needed */
+  height: auto;  /* Keeps aspect ratio */
+}
+
+header {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  border: 2px solid black;
+  font-weight: bold;
+}
+
+.navbar {
+  display: flex; /* Aligns items in a row */
+  gap: 45px; /* Adjusts spacing between each item */
+  justify-content: space-between; /* Evenly distributes items */
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 2px solid black; /* Creates an underline effect */
+}
+
+.navbar a {
+  text-decoration: none; /* Removes default underline */
+  font-weight: bold;
+  color: black;
+  padding-bottom: 5px; /* Adjust space between text and underline */
+  position: relative;
+}
+
+/*hover effect for underline for nav*/
+.navbar a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar a:hover::after {
+  transform: scaleX(1);
+}
+/*hover effect for underline for nav*/
+
+/* Nav.Header*/
+
+main {
+  display: flex;
+  width: 80%;
+  gap: 20px;
+}
+
+.profile {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  background-color: white;
+}
+
+/*name*/
+
+.name {
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+  border: 2px solid black;
+  font-weight: bold;
   background-color: rgba(58, 138, 217, 0.6);
+}
+
+.name-container {
+  display: flex; /* Aligns name text */
+  justify-content: center; /* Centers the text */
+  align-items: center;
+  width: 200px; /* Adjust width as needed */
+  padding: 10px 20px;
+  font-weight: bold;
+  border-bottom: 2px solid black; /* Adds underline effect */
+  text-align: center;
+  background-color: rgba(58, 138, 217, 0.6);
+  position: relative;
+}
+
+/* Hover effect for underline */
+.name-container::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.name-container:hover::after {
+  transform: scaleX(1);
+}
+
+
+
+/*name*/
+
+/* Details Section */
+.details {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* About Me */
+.about-me, .skills, .hobbies {
+  padding: 20px;
+  border: 2px solid black;
+  background-color: rgba(58, 138, 217, 0.6);
+}
+
+.about-me h2, .skills h2, .hobbies h2 {
+  border-bottom: 2px solid black;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+/* Skills & Hobbies List */
+.skills-list, .hobbies-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills-list li, .hobbies-list li {
+  font-size: 16px;
+  font-weight: bold;
 }
