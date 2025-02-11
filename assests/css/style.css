@@ -8,7 +8,7 @@ body {
 }
 
 body {
-  background-image: url("Bliss-BG.jpg");
+  background-image: url('assests/img/Bliss-BG.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
