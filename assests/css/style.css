@@ -27,6 +27,8 @@ p.solid {outline-style: solid;}
 
 /* profile  */
 
+
+/* profile border will add later  */
 .profileborder {
   width: 250px; 
   height: 255px;
@@ -35,23 +37,23 @@ p.solid {outline-style: solid;}
   align-items: center;
   margin: 20px auto;
   box-sizing: border-box;
-  background-image: url("https://www.pngegg.com/en/png-dkyon"); /* Your background image */
-  background-size: cover; /* Ensures background fills the container */
-  background-position: center; /* Centers the background */
-  background-repeat: no-repeat; /* Prevents tiling */
+  background-image: url("");
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
   position: relative;
-  border-radius: 50%; /* Makes the entire frame circular */
-  overflow: hidden; /* Prevents image overflow */
+  border-radius: 50%;
+  overflow: hidden;
+}
 
 .profilepic {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the profile image scales well */
-    position: absolute; /* Places the profile picture on top of the background */
-    border-radius: 50%; /* Ensures profile picture is circular */
+    object-fit: cover; 
+    position: absolute;
+    border-radius: 50%;
 }
   
-}
 
 
 
@@ -78,12 +80,12 @@ body {
   left: 20px;  /* Move to the left instead of right */
   display: flex;
   align-items: center;
-  gap: 20px; /* Space between logo and navbar */
+  gap: 20px;
 }
 
 .logo {
-  width: 50px;  /* Adjust size as needed */
-  height: auto;  /* Keeps aspect ratio */
+  width: 50px;
+  height: auto;
 }
 
 header {
@@ -96,19 +98,19 @@ header {
 }
 
 .navbar {
-  display: flex; /* Aligns items in a row */
-  gap: 45px; /* Adjusts spacing between each item */
-  justify-content: space-between; /* Evenly distributes items */
+  display: flex;
+  gap: 45px;
+  justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  border-bottom: 2px solid black; /* Creates an underline effect */
+  border-bottom: 2px solid black;
 }
 
 .navbar a {
-  text-decoration: none; /* Removes default underline */
+  text-decoration: none;
   font-weight: bold;
   color: black;
-  padding-bottom: 5px; /* Adjust space between text and underline */
+  padding-bottom: 5px;
   position: relative;
 }
 
@@ -169,13 +171,13 @@ main {
 }
 
 .name-container {
-  display: flex; /* Aligns name text */
-  justify-content: center; /* Centers the text */
+  display: flex;
+  justify-content: center;
   align-items: center;
-  width: 200px; /* Adjust width as needed */
+  width: 200px; 
   padding: 10px 20px;
   font-weight: bold;
-  border-bottom: 2px solid black; /* Adds underline effect */
+  border-bottom: 2px solid black;
   text-align: center;
   background-color: rgba(58, 138, 217, 0.6);
   position: relative;
@@ -197,6 +199,7 @@ main {
 .name-container:hover::after {
   transform: scaleX(1);
 }
+/* Hover effect for underline */
 
 
 
@@ -237,3 +240,83 @@ main {
   font-size: 16px;
   font-weight: bold;
 }
+/* Skills & Hobbies List */
+
+
+
+/* Project Section */
+
+.achievement {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.achievement-description {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+  max-width: 200px; 
+}
+
+.achievement-section {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+.achievement-title {
+  font-size: 24px;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.achievement-title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  background: black;
+  margin: 5px auto;
+}
+
+.achievement-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: nowrap;
+  margin-top: 20px;
+}
+
+.achievement-card {
+  width: 200px;
+  height: 300px;
+  border: 2px solid black;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(58, 138, 217, 0.6);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden; 
+}
+
+.achievement-card img {
+  width: 100%; 
+  height: 150px; 
+  object-fit: cover; 
+  border-bottom: 2px solid black; 
+}
+
+.arrow {
+  font-size: 32px;
+  cursor: pointer;
+  user-select: none;
+  font-weight: bold;
+  padding: 20px;
+}
+/* Project Section */
